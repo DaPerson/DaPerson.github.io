@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html><head>
   <script language="javascript" type="text/javascript" src="p5.js"></script>
   <!-- uncomment lines below to include extra p5 libraries -->
@@ -10,16 +11,26 @@ h1 {text-align: center;
 font-size: 75px
     font-style: italic;
 }
+
 </style>
+
 </head>
 
-<body style="
-    background-color: blueviolet;
-">
-<h1>Show this to your friends... I know u want to!</h1>
-<h1>YO MAMA!</h1>
-<img width="500" height="346" src="dora.jpg">
-<img width="500" height="346" src="yo-mama-jokes.jpg">
-<img width="500" height="346" src="mlg-fnaf.jpg">
+<body style="background-color: black;">
+<h1><font color="red">HAHAHAA</font></h1>
+<h1><font color="red">Im at your door...</font></h1>
+<div id="hi" style="display:none; margin:auto; position:relative; width:1000px; height:692px; background-image:url(scary.jpg); background-size:1000px">
+	<!--<img width="1000"  src="scary.jpg" />-->
+
+</div>
 <canvas id="defaultCanvas" class="  p5_hidden" width="640" height="480" style="width: 640px; height: 480px;"></canvas>
+<script type="text/javascript">
+var ScaryPic=
+document.getElementById("hi");
+console.log(ScaryPic); 
+setTimeout(function(){
+	ScaryPic.style.display="block";
+},3000);
+
+</script>
 </body></html>
